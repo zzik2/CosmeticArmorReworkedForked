@@ -14,16 +14,23 @@ public class ModConfigs {
         private static ClientConfig clientConfig;
         private static CommonConfig commonConfig;
 
+        private static final int DEFAULT_GUI_BUTTON_LEFT = 65;
+        private static final int DEFAULT_GUI_BUTTON_TOP = 67;
+        private static final int DEFAULT_TOGGLE_BUTTON_LEFT = 59;
+        private static final int DEFAULT_TOGGLE_BUTTON_TOP = 72;
+        private static final int DEFAULT_CREATIVE_GUI_BUTTON_LEFT = 95;
+        private static final int DEFAULT_CREATIVE_GUI_BUTTON_TOP = 38;
+
         public static boolean getCosArmorGuiButton_Hidden() {
                 return clientConfig != null && clientConfig.CosArmorGuiButton_Hidden;
         }
 
         public static int getCosArmorGuiButton_Left() {
-                return clientConfig != null ? clientConfig.CosArmorGuiButton_Left : 65;
+                return clientConfig != null ? clientConfig.CosArmorGuiButton_Left : DEFAULT_GUI_BUTTON_LEFT;
         }
 
         public static int getCosArmorGuiButton_Top() {
-                return clientConfig != null ? clientConfig.CosArmorGuiButton_Top : 67;
+                return clientConfig != null ? clientConfig.CosArmorGuiButton_Top : DEFAULT_GUI_BUTTON_TOP;
         }
 
         public static boolean getCosArmorToggleButton_Hidden() {
@@ -31,11 +38,11 @@ public class ModConfigs {
         }
 
         public static int getCosArmorToggleButton_Left() {
-                return clientConfig != null ? clientConfig.CosArmorToggleButton_Left : 59;
+                return clientConfig != null ? clientConfig.CosArmorToggleButton_Left : DEFAULT_TOGGLE_BUTTON_LEFT;
         }
 
         public static int getCosArmorToggleButton_Top() {
-                return clientConfig != null ? clientConfig.CosArmorToggleButton_Top : 72;
+                return clientConfig != null ? clientConfig.CosArmorToggleButton_Top : DEFAULT_TOGGLE_BUTTON_TOP;
         }
 
         public static boolean getCosArmorCreativeGuiButton_Hidden() {
@@ -43,11 +50,13 @@ public class ModConfigs {
         }
 
         public static int getCosArmorCreativeGuiButton_Left() {
-                return clientConfig != null ? clientConfig.CosArmorCreativeGuiButton_Left : 95;
+                return clientConfig != null ? clientConfig.CosArmorCreativeGuiButton_Left
+                                : DEFAULT_CREATIVE_GUI_BUTTON_LEFT;
         }
 
         public static int getCosArmorCreativeGuiButton_Top() {
-                return clientConfig != null ? clientConfig.CosArmorCreativeGuiButton_Top : 38;
+                return clientConfig != null ? clientConfig.CosArmorCreativeGuiButton_Top
+                                : DEFAULT_CREATIVE_GUI_BUTTON_TOP;
         }
 
         public static boolean getCosArmorKeepThroughDeath() {
@@ -118,14 +127,14 @@ public class ModConfigs {
 
         private static class ClientConfig {
                 boolean CosArmorGuiButton_Hidden = false;
-                int CosArmorGuiButton_Left = 65;
-                int CosArmorGuiButton_Top = 67;
+                int CosArmorGuiButton_Left = DEFAULT_GUI_BUTTON_LEFT;
+                int CosArmorGuiButton_Top = DEFAULT_GUI_BUTTON_TOP;
                 boolean CosArmorToggleButton_Hidden = false;
-                int CosArmorToggleButton_Left = 59;
-                int CosArmorToggleButton_Top = 72;
+                int CosArmorToggleButton_Left = DEFAULT_TOGGLE_BUTTON_LEFT;
+                int CosArmorToggleButton_Top = DEFAULT_TOGGLE_BUTTON_TOP;
                 boolean CosArmorCreativeGuiButton_Hidden = false;
-                int CosArmorCreativeGuiButton_Left = 95;
-                int CosArmorCreativeGuiButton_Top = 38;
+                int CosArmorCreativeGuiButton_Left = DEFAULT_CREATIVE_GUI_BUTTON_LEFT;
+                int CosArmorCreativeGuiButton_Top = DEFAULT_CREATIVE_GUI_BUTTON_TOP;
                 boolean CosArmorStackRendering = false;
         }
 

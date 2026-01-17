@@ -112,7 +112,7 @@ public class InventoryManager {
                 || !PlatformHelper.isModLoaded(modid))
             return false;
 
-        return false;
+        return true;
     }
 
     public ContainerCosArmor createContainerClient(int windowId, Inventory invPlayer) {
@@ -194,11 +194,6 @@ public class InventoryManager {
             saveInventory(uuid, inv);
             CommonCache.invalidate(uuid);
         }
-    }
-
-    public void handleRegisterCommands(
-            Consumer<com.mojang.brigadier.CommandDispatcher<net.minecraft.commands.CommandSourceStack>> register) {
-        register.accept(new com.mojang.brigadier.CommandDispatcher<>());
     }
 
     public void registerCommands(
