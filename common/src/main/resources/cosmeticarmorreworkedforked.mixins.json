@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "package": "zzik2.cosmeticarmorreworkedforked.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "minVersion": "0.8",
+  "client": [
+    "AbstractContainerScreenAccessor",
+    "LivingEntityRendererAccessor",
+    "HumanoidArmorLayerInvoker",
+    "HumanoidArmorLayerMixin"
+  ],
+  "mixins": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

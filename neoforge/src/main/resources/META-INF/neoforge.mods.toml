@@ -1,0 +1,39 @@
+modLoader = "javafml"
+loaderVersion = "[2,)"
+#issueTrackerURL = ""
+license = "MIT"
+
+[[mods]]
+modId = "cosmeticarmorreworkedforked"
+version = "${version}"
+displayName = "CosmeticArmorReworkedForked"
+authors = ["zzik2", "zlainsama"]
+credits = "dmillerw - original author; azanor - some code learned from baubles; izuminya - button icon; Deph0 and sblectric for their support when i'm absent; zlainsama - Owner of CosmeticArmorReworked;"
+description = '''
+This mod allows you to wear two sets of armor, one for display, one for function. You can also hide armor for your skin. For PVP, you can stop the mod from functioning on your client side.
+'''
+#logoFile = ""
+
+[[dependencies.cosmeticarmorreworkedforked]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.cosmeticarmorreworkedforked]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.cosmeticarmorreworkedforked]]
+modId = "architectury"
+type = "required"
+versionRange = "[13.0.8,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[mixins]]
+config = "cosmeticarmorreworkedforked.mixins.json"

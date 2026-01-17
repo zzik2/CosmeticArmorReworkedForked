@@ -1,0 +1,13 @@
+{
+    "required": true,
+    "package": "lain.mods.cos.mixin.fabric",
+    "compatibilityLevel": "JAVA_21",
+    "minVersion": "0.8",
+    "client": [
+        "PlayerRendererMixin"
+    ],
+    "mixins": [],
+    "injectors": {
+        "defaultRequire": 1
+    }
+}
