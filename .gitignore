@@ -4,6 +4,9 @@
 *.iml
 *.ipr
 *.iws
+common/bin
+neoforge/bin
+fabric/bin
 
 # IntelliJ
 out/

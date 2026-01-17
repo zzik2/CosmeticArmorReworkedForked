@@ -12,7 +12,7 @@ credits = "dmillerw - original author; azanor - some code learned from baubles; 
 description = '''
 This mod allows you to wear two sets of armor, one for display, one for function. You can also hide armor for your skin. For PVP, you can stop the mod from functioning on your client side.
 '''
-#logoFile = ""
+logoFile = "assets/cosmeticarmorreworkedforked/icon.png"
 
 [[dependencies.cosmeticarmorreworkedforked]]
 modId = "neoforge"
