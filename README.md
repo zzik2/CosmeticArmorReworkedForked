@@ -11,16 +11,16 @@ CosmeticArmorReworked enables cosmetic equipment rendering while keeping gamepla
 
 ## Supported Minecraft versions: 
 - **1.21.1**
-- **1.21.2**
-- **1.21.3**
-- **1.21.4**
-- **1.21.5**
-- **1.21.6**
-- **1.21.7**
-- **1.21.8**
-- **1.21.9**
-- **1.21.10**
-- **1.21.11**
+- **1.21.2**(WIP)
+- **1.21.3**(WIP)
+- **1.21.4**(WIP)
+- **1.21.5**(WIP)
+- **1.21.6**(WIP)
+- **1.21.7**(WIP)
+- **1.21.8**(WIP)
+- **1.21.9**(WIP)
+- **1.21.10**(WIP)
+- **1.21.11**(WIP)
 
 ## Dual Rendering Mode (CosArmorStackRendering)
 By default, the mod renders either the real equipment or the cosmetic equipment.  
