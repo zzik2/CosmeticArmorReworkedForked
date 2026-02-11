@@ -5,9 +5,10 @@
   "minVersion": "0.8",
   "client": [
     "AbstractContainerScreenAccessor",
-    "LivingEntityRendererAccessor",
     "HumanoidArmorLayerInvoker",
-    "HumanoidArmorLayerMixin"
+    "HumanoidArmorLayerMixin",
+    "InventoryScreenAccessor",
+    "LivingEntityRendererAccessor"
   ],
   "mixins": [],
   "injectors": {
