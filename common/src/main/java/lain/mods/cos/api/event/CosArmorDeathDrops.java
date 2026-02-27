@@ -18,7 +18,13 @@ import net.minecraft.world.entity.player.Player;
  */
 public class CosArmorDeathDrops {
 
-    public static final Event<CosArmorDeathDropsCallback> EVENT = EventFactory.createLoop();
+    public static final Event<CosArmorDeathDropsCallback> EVENT = EventFactory.of(listeners -> event -> {
+        for (CosArmorDeathDropsCallback listener : listeners) {
+            if (listener.onDeathDrops(event))
+                return true;
+        }
+        return false;
+    });
 
     private final Player player;
     private final CAStacksBase stacks;
