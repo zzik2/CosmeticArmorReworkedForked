@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "cosmeticarmorreworkedforked",
+  "version": "${version}",
+  "name": "CosmeticArmorReworkedForked",
+  "description": "This mod allows you to wear two sets of armor, one for display, one for function. You can also hide armor for your skin. For PVP, you can stop the mod from functioning on your client side.",
+  "credits": "dmillerw - original author; azanor - some code learned from baubles; izuminya - button icon; Deph0 and sblectric for their support when i'm absent; zlainsama - Owner of CosmeticArmorReworked;",
+  "authors": [
+    "zzik2",
+    "zlainsama"
+  ],
+  "contact": {
+    "homepage": ""
+  },
+  "license": "MIT",
+  "icon": "assets/cosmeticarmorreworkedforked/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "zzik2.cosmeticarmorreworkedforked.fabric.CosmeticarmorreworkedForkedFabric"
+    ],
+    "client": [
+      "zzik2.cosmeticarmorreworkedforked.fabric.client.CosmeticarmorreworkedForkedFabricClient"
+    ]
+  },
+  "mixins": [
+    "cosmeticarmorreworkedforked.mixins.json",
+    "cosmeticarmorreworkedforked-fabric.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.4",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "architectury": ">=13.0.8",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
